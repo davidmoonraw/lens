@@ -1,6 +1,5 @@
 
 const express = require('express');
-
 require('dotenv').config({path:'.env'});
 const {EXPRESS_PORT} = process.env;
 const controller = require('./controller/main');
@@ -11,6 +10,6 @@ app.use(controller);
 
 
 app.listen(EXPRESS_PORT, ()=>{
-    console.log("foobar");
+    console.log(`Server is running on port ${EXPRESS_PORT}`);
 });
 
