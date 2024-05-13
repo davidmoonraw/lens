@@ -1,11 +1,13 @@
-
-const express = require('express');
 require('dotenv').config({path:'.env'});
-const {EXPRESS_PORT} = process.env;
+require('./db');
+const express = require('express');
 const controller = require('./controller/main');
 
-const app = express();
+const {EXPRESS_PORT} = process.env;
 
+
+const app = express();
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(controller);
 
 
