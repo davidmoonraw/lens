@@ -3,9 +3,6 @@ const router = express.Router();
 const path = require('path');
 const Form = require('../form');
 
-
-const urlEncodedParser = bodyparser.urlencoded({extended:false})
-
 router.use((req,res,next)=>{
     console.log("Time:",Date.now());
     next();
