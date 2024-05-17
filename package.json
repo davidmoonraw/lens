@@ -1,0 +1,35 @@
+{
+  "name": "lens",
+  "version": "1.0.0",
+  "description": "lens, glasses",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server\\index.js",
+    "test": "jest --watchAll --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XmoonraX/lens.git"
+  },
+  "keywords": [
+    "lens",
+    "glasses"
+  ],
+  "author": "david",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XmoonraX/lens/issues"
+  },
+  "homepage": "https://github.com/XmoonraX/lens#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.4",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-mock-req-res": "^1.0.2",
+    "mongodb-memory-server": "^9.2.0"
+  }
+}

@@ -1,0 +1,10 @@
+.dancing-script-lens {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bg-image {
+  background-image: url('./assets/backgroundlenst.png');
+}
