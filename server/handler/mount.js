@@ -4,8 +4,8 @@ const path = require('path');
 const form = require('index');
 
 
-router.use((req,res,next)=>{
-    console.log("Time:",Date.now());
+router.use((req, res, next) => {
+    console.log("Time:", Date.now());
     next();
 });
 
