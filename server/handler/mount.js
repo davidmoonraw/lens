@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const form = require('index');
+const form = require('./index');
 
 
 router.use((req, res, next) => {
