@@ -1,5 +1,6 @@
 $(document).ready(()=>{
 
+    //change to JQUERY
     let body  = document.querySelector('body');
     body.insertAdjacentHTML('afterbegin', navbarHTML)
 
@@ -35,7 +36,7 @@ const navbarHTML = `<!--NAVIGATION BAR-->
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#collection">Collection</a>
+            <a id="collection" class="nav-link" href="#collection">Collection</a>
           </li>
 
           <li class="nav-item">
