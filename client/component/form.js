@@ -1,3 +1,4 @@
+//POST CONTACT US COMMENT
 const formPost = function () {
   $('#submit').on('click',
     function () {
@@ -17,10 +18,10 @@ const formPost = function () {
         modalContentChange();
       }).always(function () {
         //Display modal
-        $('#modalTrigger').trigger('click')
+        $('#modalTrigger').trigger('click');
       })
-    })
-}
+    });
+};
 
 const modalContentChange = function () {
   /**
@@ -28,9 +29,9 @@ const modalContentChange = function () {
    */
 
   //Header
-  $('#modalTitle').text("Failure")
+  $('#modalTitle').text("Failure");
   //Body
-  $('#modalText').text("Failed to submit form")
+  $('#modalText').text("Failed to submit form");
   //Icon 
   $('#modalIcon').removeClass().addClass("bi bi-exclamation-circle");
   //
@@ -59,7 +60,7 @@ let modal = `<!--MODAL-->
     </div>
   </div>
 <!-- Trigger Modal -->
-<button hidden id='modalTrigger'type="button"  data-bs-toggle="modal" data-bs-target="#formModal""></button>`
+<button hidden id='modalTrigger'type="button"  data-bs-toggle="modal" data-bs-target="#formModal""></button>`;
 
 
 $(document).ready(() => {
