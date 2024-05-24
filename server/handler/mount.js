@@ -1,18 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const form = require('./index');
+const { form, collection } = require('./index');
 
+router.use(express.static(path.join(__dirname, '..', '..', 'client'))); // serve static files
+router.use(express.urlencoded({ extended: true })); // parse application/x-www-form-urlencoded
 
-router.use((req, res, next) => {
-    console.log("Time:", Date.now());
-    next();
-});
-
-router.use(express.static(path.join(__dirname, '..', '..', 'client')));
-router.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-
-
-router.post(form);
+router.post('/collection', collection) // products
+router.post('/form', form); //contact us
 
 module.exports = router;
