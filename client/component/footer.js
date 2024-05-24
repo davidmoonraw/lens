@@ -1,12 +1,13 @@
 $(document).ready(()=>{
 
-    let body  = document.querySelector('#main-section');
+    //change to JQUERY
+    let body  = document.querySelector('#main');
     body.insertAdjacentHTML('beforeend', footerHTML)
 
 });
 
-
-const footerHTML = ` <!--Footer-->     
+// HTML FOOTER SKELETON
+const footerHTML = `<!--Footer-->     
 <div class="row gy-5">
 <div class="col-12 text-center">
 <footer>Copyright Lens ~ 2024</footer>
