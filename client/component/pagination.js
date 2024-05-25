@@ -1,3 +1,4 @@
+// Calculate page number and update html elements
 const modifyPaginationNumbers = (move) => {
     $(".page-number a").map(function () {
         let currentValue = parseInt(this.innerHTML);
@@ -5,45 +6,46 @@ const modifyPaginationNumbers = (move) => {
         this.innerHTML = value;
     })
 };
-
-const pageHandler = function (action) {
+//Handle pagination flow
+const pageHandler = function (fetch) {
 
     let page = { number: 1 };
     let index = { number: 0 };
 
     if (page.number == 1) {
-        action(page);
+        fetch(page);
     };
     $('.page-number').click(async () => {
         page = await $(this).text();
-        action(page);
+        fetch(page);
     });
     $('#prev').click(async () => {
         await prevItem(index, page, modifyPaginationNumbers);
-        action(page);
+        fetch(page);
     });
     $('#next').click(async () => {
         await nextItem(index, page, modifyPaginationNumbers);
-        action(page);
+        fetch(page);
     });
 };
 
-
+//Handle 'previous' item for pagination scheme
 const prevItem = (index, page, action) => {
-    //do nothing
+    //do nothing for the following commented conditions
     //index == 0 && page == 1
     // index > 0 && page == 1
     if (index.number == 0 && page.number > 1) {
         page.number--;
-        action(page.number);
+        action('prev');
     }
     else if (index.number > 0) {
         page.number--;
         index.number--;
     }
 };
-
+//Handle 'next' item for pagination scheme
 const nextItem = (index, page, action) => {
+    //do nothing for the following commented conditions
     //index ==1 && page == 1
     // index ==1 && page > 1
     if (index.number < 2) {
@@ -52,6 +54,6 @@ const nextItem = (index, page, action) => {
     }
     else if (index.number == 2) {
         page.number++;
-        action(page.number);
+        action('next');
     }
 };

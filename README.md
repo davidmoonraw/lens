@@ -4,6 +4,9 @@
 
 Tested in Chrome
 
+**Keywords**
+javascript,html,css,jquery,bootstrap,jest,express,mongoose,nosql
+
 **Instructions**
 
 Make sure to create `.env` for the following variables which will be used to connect to Cloud Atlas Mongodb:
@@ -24,3 +27,9 @@ node populatedb.js
 
 3. Start the application:
 npm start
+
+
+
+**DEMO**
+
+[![Watch the video](https://raw.githubusercontent.com/davidmoonraw/lens/main/demo/lensthumbnail.gif)](https://raw.githubusercontent.com/davidmoonraw/lens/main/demo/Lens.mp4)
