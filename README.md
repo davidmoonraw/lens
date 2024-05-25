@@ -32,4 +32,10 @@ npm start
 
 **DEMO**
 
-[![Watch the video](https://raw.githubusercontent.com/davidmoonraw/lens/blob/main/demo/lensthumbnail.gif)](https://raw.githubusercontent.com/davidmoonraw/lens/blob/main/demo/Lens.mp4)
+https://github.com/davidmoonraw/lens/assets/169413795/e8beb5bd-9286-408a-add8-cf028139babe
+
+
+
+
+
+
